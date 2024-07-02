@@ -28,4 +28,11 @@ class Plataforma
                             VALUES ('$this->nombre','$this->fecha_lanzamiento', '$this->imagen', '$this->empresa')");
         return $sql;
     }
+
+    public function eliminar()
+    {
+        $db = new Conexion();
+        $sql = $db->query("DELETE FROM plataforma WHERE id_plataforma = '$this->id_plataforma'");
+        return $sql;
+    }
 }
