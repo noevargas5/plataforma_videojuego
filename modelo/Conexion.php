@@ -1,5 +1,8 @@
 <?php
-class Conexion extends mysqli
+
+namespace modelo;
+
+class Conexion extends \mysqli
 {
     public function __construct()
     {
